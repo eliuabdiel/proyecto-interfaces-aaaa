@@ -10,14 +10,19 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-login">
         <div class="form-box">
-            <img src="/assets/img/logo.png" class="logo" alt="Hotel Nayesi" width="47%">
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="Usuario">
-                <input type="password" class="input-field" placeholder="Contraseña">
-                <button type="submit" class="submit-btn">Iniciar sesión</button>
+            <img src="assets/img/logo.png" class="logo" alt="Hotel Nayesi" width="47%">
+            <form id="login" >
+                <div class="input-group">
+                    <label for="user" style="background-color: white;">Usuario</label>
+                    <input id="user" type="text" class="input-field" placeholder="pepe">
+                    <label for="pass" style="background-color: white;">Contraseña</label>
+                    <input id="pass" type="password" class="input-field" placeholder="******">
+                </div>
+                
             </form>
+            <a href="crud.html" style="text-decoration: none;"><button type="submit" class="submit-btn">Iniciar sesión</button></a>
         </div>
     </div>
 </body>

@@ -2,21 +2,23 @@
   margin: 0;
   padding: 0;
   background: #353535;
+  font: 16px Roboto, sans-serif;
 }
 
-.container {
-  height: 100%;
-  width: 100%;
+.container-login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-box {
   width: 380px;
   height: 420px;
   position: relative;
-  margin: 6% auto;
   background: #fff;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .bottom-box {
@@ -29,10 +31,10 @@
 
 .input-group {
   top: 190px;
-  position: absolute;
   width: 280px;
+  margin: 5px auto;
   transition: 0.5s;
-  background: none;
+  background: white;
 }
 
 .input-field {
@@ -48,23 +50,42 @@
 }
 
 .submit-btn {
-  width: 85%;
-  padding: 10px 30px;
+  width: 100%;
+  color: white;
+  padding: 5px 30px;
   cursor: pointer;
   display: block;
   margin: auto;
-  background: linear-gradient(to right, #0f9200, #30cb00, #4ae54a);
-  border: 0;
+  background-color: #28a745;
   outline: none;
-  border-radius: 25px;
+  border: 2px solid green;
+  border-radius: 5px;
   margin-top: 40px;
+  /* font-weight: bold; */
+  font-size: 1.5rem;
 }
-
+.submit-btn:hover {
+  animation-name: fillButton;
+  animation-duration: 0.2s;
+  color: green;
+  background: white;
+}
 #login {
   left: 50px;
+  background-color: white;
 }
 
 .logo {
   display: block;
   margin: auto;
+  background-color: white;
+}
+
+@keyframes fillButton {
+  from {
+    background-color: #28a745;
+  }
+  to {
+    background: white;
+  }
 }
